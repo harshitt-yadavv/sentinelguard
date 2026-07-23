@@ -49,8 +49,8 @@ if __name__ == "__main__":
     df = load_events()
     baselines = build_user_baselines(df)
 
-    print("Sample risk scores on real events:\n")
-    for _, event in df.head(10).iterrows():
+    print("Sample risk scores on normal events:\n")
+    for _, event in df.head(5).iterrows():
         baseline = baselines[event["user_id"]]
         score, reasons = score_event(event, baseline)
         level = classify_risk(score)
@@ -58,3 +58,28 @@ if __name__ == "__main__":
               f"hour {event['hour']} -> Score: {score} ({level})")
         for r in reasons:
             print(f"    - {r}")
+
+    print("\n" + "="*60)
+    print("Scoring INJECTED ATTACK events:\n")
+
+    import json
+    import os
+    import pandas as pd
+
+    attack_path = os.path.join(os.path.dirname(__file__), "..", "data", "attack_events.json")
+    with open(attack_path, "r") as f:
+        attack_events = json.load(f)
+
+    attack_df = pd.DataFrame(attack_events)
+    attack_df["timestamp"] = pd.to_datetime(attack_df["timestamp"])
+    attack_df["hour"] = attack_df["timestamp"].dt.hour
+
+    for _, event in attack_df.iterrows():
+        baseline = baselines[event["user_id"]]
+        score, reasons = score_event(event, baseline)
+        level = classify_risk(score)
+        print(f"{event['user_id']} | {event['action']} | {event['volume_mb']}MB | "
+              f"hour {event['hour']} -> Score: {score} ({level})")
+        for r in reasons:
+            print(f"    - {r}")
+        print()

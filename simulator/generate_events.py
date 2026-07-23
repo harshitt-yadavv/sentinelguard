@@ -41,6 +41,34 @@ def generate_dataset(n_events=500):
     events.sort(key=lambda e: e["timestamp"])
     return events
 
+def generate_attack_events():
+    """
+    Deliberately suspicious events, used to test whether the risk engine
+    correctly flags real insider-threat-style behavior.
+    """
+    now = datetime.datetime.now()
+    return [
+        {
+            "user_id": "u_alice",
+            "timestamp": now.replace(hour=2, minute=15, second=0, microsecond=0).isoformat(),
+            "action": "usb_copy",
+            "volume_mb": 480.0,  # huge, at 2am - very unusual for Alice
+        },
+        {
+            "user_id": "u_bob",
+            "timestamp": now.replace(hour=23, minute=40, second=0, microsecond=0).isoformat(),
+            "action": "cloud_upload",
+            "volume_mb": 320.0,  # late night, way above Bob's normal ~5MB
+        },
+        {
+            "user_id": "u_carol",
+            "timestamp": now.replace(hour=14, minute=0, second=0, microsecond=0).isoformat(),
+            "action": "email_attachment",
+            "volume_mb": 9.5,  # normal hours, normal size - a "control" case, should stay LOW
+        },
+    ]
+
+
 if __name__ == "__main__":
     events = generate_dataset(500)
 
@@ -52,3 +80,10 @@ if __name__ == "__main__":
         json.dump(events, f, indent=2)
 
     print(f"Generated {len(events)} events -> {output_path}")
+
+    attack_events = generate_attack_events()
+    attack_path = os.path.join(output_dir, "attack_events.json")
+    with open(attack_path, "w") as f:
+        json.dump(attack_events, f, indent=2)
+
+    print(f"Generated {len(attack_events)} attack test events -> {attack_path}")

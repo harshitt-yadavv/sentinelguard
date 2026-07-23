@@ -1,0 +1,20 @@
+[
+  {
+    "user_id": "u_alice",
+    "timestamp": "2026-07-23T02:15:00",
+    "action": "usb_copy",
+    "volume_mb": 480.0
+  },
+  {
+    "user_id": "u_bob",
+    "timestamp": "2026-07-23T23:40:00",
+    "action": "cloud_upload",
+    "volume_mb": 320.0
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-23T14:00:00",
+    "action": "email_attachment",
+    "volume_mb": 9.5
+  }
+]
