@@ -44,28 +44,32 @@ def classify_risk(score):
         return "MEDIUM"
     else:
         return "LOW"
-
 if __name__ == "__main__":
-    df = load_events()
-    baselines = build_user_baselines(df)
-
-    print("Sample risk scores on normal events:\n")
-    for _, event in df.head(5).iterrows():
-        baseline = baselines[event["user_id"]]
-        score, reasons = score_event(event, baseline)
-        level = classify_risk(score)
-        print(f"{event['user_id']} | {event['action']} | {event['volume_mb']}MB | "
-              f"hour {event['hour']} -> Score: {score} ({level})")
-        for r in reasons:
-            print(f"    - {r}")
-
-    print("\n" + "="*60)
-    print("Scoring INJECTED ATTACK events:\n")
-
     import json
     import os
     import pandas as pd
 
+    df = load_events()
+    baselines = build_user_baselines(df)
+
+    results = []
+
+    # Score all normal events
+    for _, event in df.iterrows():
+        baseline = baselines[event["user_id"]]
+        score, reasons = score_event(event, baseline)
+        level = classify_risk(score)
+        results.append({
+            "user_id": event["user_id"],
+            "action": event["action"],
+            "volume_mb": event["volume_mb"],
+            "timestamp": event["timestamp"].isoformat(),
+            "score": score,
+            "level": level,
+            "reasons": reasons,
+        })
+
+    # Score attack events too
     attack_path = os.path.join(os.path.dirname(__file__), "..", "data", "attack_events.json")
     with open(attack_path, "r") as f:
         attack_events = json.load(f)
@@ -78,8 +82,18 @@ if __name__ == "__main__":
         baseline = baselines[event["user_id"]]
         score, reasons = score_event(event, baseline)
         level = classify_risk(score)
-        print(f"{event['user_id']} | {event['action']} | {event['volume_mb']}MB | "
-              f"hour {event['hour']} -> Score: {score} ({level})")
-        for r in reasons:
-            print(f"    - {r}")
-        print()
+        results.append({
+            "user_id": event["user_id"],
+            "action": event["action"],
+            "volume_mb": event["volume_mb"],
+            "timestamp": event["timestamp"].isoformat(),
+            "score": score,
+            "level": level,
+            "reasons": reasons,
+        })
+
+    output_path = os.path.join(os.path.dirname(__file__), "..", "data", "scored_events.json")
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"Scored {len(results)} events -> {output_path}")

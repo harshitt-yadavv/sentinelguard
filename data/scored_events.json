@@ -1,0 +1,4941 @@
+[
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 14.54,
+    "timestamp": "2026-06-24T09:52:35",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 3.09,
+    "timestamp": "2026-06-24T09:56:30",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 7.79,
+    "timestamp": "2026-06-24T10:01:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 14.54,
+    "timestamp": "2026-06-24T10:03:07",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 14.49,
+    "timestamp": "2026-06-24T11:36:25",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 6.19,
+    "timestamp": "2026-06-24T12:16:54",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 13.88,
+    "timestamp": "2026-06-24T13:36:04",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 6.27,
+    "timestamp": "2026-06-24T13:54:54",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 7.42,
+    "timestamp": "2026-06-24T14:02:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 19.93,
+    "timestamp": "2026-06-24T15:00:29",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 1.67,
+    "timestamp": "2026-06-24T16:14:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 4.03,
+    "timestamp": "2026-06-24T16:39:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 1.24,
+    "timestamp": "2026-06-24T16:50:16",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 14.01,
+    "timestamp": "2026-06-24T17:13:57",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 0.82,
+    "timestamp": "2026-06-24T17:15:54",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 2.24,
+    "timestamp": "2026-06-25T08:45:05",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 12.89,
+    "timestamp": "2026-06-25T09:28:36",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.04,
+    "timestamp": "2026-06-25T09:40:37",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 12.37,
+    "timestamp": "2026-06-25T10:35:13",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 0.93,
+    "timestamp": "2026-06-25T11:40:49",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 19.13,
+    "timestamp": "2026-06-25T11:50:17",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 10.7,
+    "timestamp": "2026-06-25T12:27:46",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 11.53,
+    "timestamp": "2026-06-25T12:53:13",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 2.6,
+    "timestamp": "2026-06-25T13:28:31",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 3.96,
+    "timestamp": "2026-06-25T13:36:28",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 1.38,
+    "timestamp": "2026-06-25T14:32:21",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 8.43,
+    "timestamp": "2026-06-25T14:37:36",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 3.07,
+    "timestamp": "2026-06-25T14:50:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 0.63,
+    "timestamp": "2026-06-25T15:00:01",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 9.75,
+    "timestamp": "2026-06-25T15:20:21",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.46,
+    "timestamp": "2026-06-25T15:29:10",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 3.57,
+    "timestamp": "2026-06-25T15:47:30",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 7.24,
+    "timestamp": "2026-06-25T15:52:48",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 8.3,
+    "timestamp": "2026-06-25T15:53:50",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 13.63,
+    "timestamp": "2026-06-25T16:58:31",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 4.17,
+    "timestamp": "2026-06-25T17:57:56",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 2.69,
+    "timestamp": "2026-06-25T18:19:37",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 9.64,
+    "timestamp": "2026-06-26T11:06:15",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 6.01,
+    "timestamp": "2026-06-26T11:12:42",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 10.51,
+    "timestamp": "2026-06-26T11:57:03",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 9.06,
+    "timestamp": "2026-06-26T12:09:04",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 7.72,
+    "timestamp": "2026-06-26T12:28:20",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 17.8,
+    "timestamp": "2026-06-26T14:13:43",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 17.43,
+    "timestamp": "2026-06-26T14:18:24",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 12.2,
+    "timestamp": "2026-06-26T15:17:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 6.51,
+    "timestamp": "2026-06-26T15:20:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 7.46,
+    "timestamp": "2026-06-26T15:45:28",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 10.59,
+    "timestamp": "2026-06-26T16:13:35",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 3.3,
+    "timestamp": "2026-06-26T16:17:53",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 8.56,
+    "timestamp": "2026-06-26T16:32:22",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 3.51,
+    "timestamp": "2026-06-26T16:56:37",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 4.67,
+    "timestamp": "2026-06-27T09:17:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.76,
+    "timestamp": "2026-06-27T10:29:41",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 1.38,
+    "timestamp": "2026-06-27T10:32:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 16.12,
+    "timestamp": "2026-06-27T10:38:58",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 5.1,
+    "timestamp": "2026-06-27T10:51:29",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 9.96,
+    "timestamp": "2026-06-27T12:11:56",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 6.74,
+    "timestamp": "2026-06-27T12:13:58",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.56,
+    "timestamp": "2026-06-27T12:20:15",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 7.35,
+    "timestamp": "2026-06-27T12:24:43",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 14.02,
+    "timestamp": "2026-06-27T12:39:42",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 13.46,
+    "timestamp": "2026-06-27T12:39:51",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 4.71,
+    "timestamp": "2026-06-27T12:47:51",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 4.45,
+    "timestamp": "2026-06-27T12:50:48",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 13.92,
+    "timestamp": "2026-06-27T13:14:58",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 18.73,
+    "timestamp": "2026-06-27T13:37:45",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 4.15,
+    "timestamp": "2026-06-27T14:22:27",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 9.47,
+    "timestamp": "2026-06-27T14:56:30",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 11.93,
+    "timestamp": "2026-06-27T15:48:51",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 3.9,
+    "timestamp": "2026-06-28T10:13:34",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 3.47,
+    "timestamp": "2026-06-28T10:18:14",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 15.26,
+    "timestamp": "2026-06-28T10:25:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 10.93,
+    "timestamp": "2026-06-28T10:33:07",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 1.62,
+    "timestamp": "2026-06-28T11:47:14",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 13.36,
+    "timestamp": "2026-06-28T12:06:10",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 1.61,
+    "timestamp": "2026-06-28T12:31:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 5.76,
+    "timestamp": "2026-06-28T12:33:25",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 1.58,
+    "timestamp": "2026-06-28T12:50:26",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 7.35,
+    "timestamp": "2026-06-28T14:04:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 13.86,
+    "timestamp": "2026-06-28T14:08:04",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 6.97,
+    "timestamp": "2026-06-28T14:08:53",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 7.67,
+    "timestamp": "2026-06-28T14:29:43",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 19.13,
+    "timestamp": "2026-06-28T14:52:07",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 6.88,
+    "timestamp": "2026-06-28T15:23:59",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 6.16,
+    "timestamp": "2026-06-28T16:03:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 13.45,
+    "timestamp": "2026-06-28T17:18:31",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 4.42,
+    "timestamp": "2026-06-28T17:21:16",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 10.17,
+    "timestamp": "2026-06-28T17:59:18",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 6.74,
+    "timestamp": "2026-06-29T08:10:41",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 4.05,
+    "timestamp": "2026-06-29T08:23:55",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 9.69,
+    "timestamp": "2026-06-29T10:10:47",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 14.95,
+    "timestamp": "2026-06-29T10:10:51",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 2.09,
+    "timestamp": "2026-06-29T12:10:57",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 5.61,
+    "timestamp": "2026-06-29T12:15:43",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 4.93,
+    "timestamp": "2026-06-29T12:19:59",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 2.3,
+    "timestamp": "2026-06-29T12:29:01",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 2.04,
+    "timestamp": "2026-06-29T13:00:37",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 10.82,
+    "timestamp": "2026-06-29T13:04:33",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 5.95,
+    "timestamp": "2026-06-29T13:55:56",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 13.11,
+    "timestamp": "2026-06-29T14:01:06",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 2.12,
+    "timestamp": "2026-06-29T14:13:24",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 4.48,
+    "timestamp": "2026-06-29T14:51:59",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 9.68,
+    "timestamp": "2026-06-29T15:01:12",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 3.93,
+    "timestamp": "2026-06-29T15:23:22",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.76,
+    "timestamp": "2026-06-29T16:14:22",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 9.58,
+    "timestamp": "2026-06-29T16:58:20",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 5.62,
+    "timestamp": "2026-06-30T08:52:44",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 14.21,
+    "timestamp": "2026-06-30T09:11:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 10.27,
+    "timestamp": "2026-06-30T09:42:38",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 13.22,
+    "timestamp": "2026-06-30T10:37:12",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 9.73,
+    "timestamp": "2026-06-30T11:09:39",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 4.41,
+    "timestamp": "2026-06-30T11:41:14",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 12.66,
+    "timestamp": "2026-06-30T11:45:06",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 6.99,
+    "timestamp": "2026-06-30T13:10:21",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 2.03,
+    "timestamp": "2026-06-30T13:36:13",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 6.86,
+    "timestamp": "2026-06-30T14:49:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 4.79,
+    "timestamp": "2026-06-30T14:50:59",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 2.74,
+    "timestamp": "2026-06-30T16:57:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 1.53,
+    "timestamp": "2026-06-30T17:04:44",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 9.8,
+    "timestamp": "2026-06-30T17:24:45",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 11.42,
+    "timestamp": "2026-07-01T09:24:50",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.41,
+    "timestamp": "2026-07-01T09:36:03",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 2.58,
+    "timestamp": "2026-07-01T11:33:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 13.83,
+    "timestamp": "2026-07-01T12:06:33",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 3.78,
+    "timestamp": "2026-07-01T12:13:31",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.96,
+    "timestamp": "2026-07-01T12:26:48",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 13.77,
+    "timestamp": "2026-07-01T13:06:26",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 7.82,
+    "timestamp": "2026-07-01T15:30:28",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 9.62,
+    "timestamp": "2026-07-01T15:43:38",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 17.1,
+    "timestamp": "2026-07-01T15:54:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 11.02,
+    "timestamp": "2026-07-01T16:49:56",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 1.82,
+    "timestamp": "2026-07-01T17:20:09",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 3.17,
+    "timestamp": "2026-07-01T17:20:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 6.98,
+    "timestamp": "2026-07-01T17:42:48",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 5.26,
+    "timestamp": "2026-07-02T09:36:52",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 15.83,
+    "timestamp": "2026-07-02T10:04:23",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 17.68,
+    "timestamp": "2026-07-02T10:13:17",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 9.43,
+    "timestamp": "2026-07-02T10:32:28",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.92,
+    "timestamp": "2026-07-02T10:49:20",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 13.77,
+    "timestamp": "2026-07-02T11:04:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 13.81,
+    "timestamp": "2026-07-02T11:11:40",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 13.73,
+    "timestamp": "2026-07-02T11:28:54",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 18.79,
+    "timestamp": "2026-07-02T11:31:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 2.7,
+    "timestamp": "2026-07-02T13:13:17",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 2.99,
+    "timestamp": "2026-07-02T13:19:42",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 13.52,
+    "timestamp": "2026-07-02T13:27:50",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 6.1,
+    "timestamp": "2026-07-02T14:06:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 7.67,
+    "timestamp": "2026-07-02T14:28:11",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 14.85,
+    "timestamp": "2026-07-02T15:12:27",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 3.53,
+    "timestamp": "2026-07-02T15:16:33",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 8.3,
+    "timestamp": "2026-07-02T16:47:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 6.69,
+    "timestamp": "2026-07-02T16:48:49",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 11.85,
+    "timestamp": "2026-07-02T18:04:40",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 9.68,
+    "timestamp": "2026-07-03T08:19:02",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 12.29,
+    "timestamp": "2026-07-03T09:33:47",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 5.15,
+    "timestamp": "2026-07-03T09:56:40",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 6.84,
+    "timestamp": "2026-07-03T10:12:29",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 11.61,
+    "timestamp": "2026-07-03T10:54:19",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 9.31,
+    "timestamp": "2026-07-03T11:13:17",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 4.27,
+    "timestamp": "2026-07-03T11:31:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 17.52,
+    "timestamp": "2026-07-03T11:41:17",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 12.77,
+    "timestamp": "2026-07-03T13:12:54",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 1.69,
+    "timestamp": "2026-07-03T13:26:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 13.54,
+    "timestamp": "2026-07-03T13:46:04",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 11.52,
+    "timestamp": "2026-07-03T13:55:20",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 13.85,
+    "timestamp": "2026-07-03T14:15:12",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 2.47,
+    "timestamp": "2026-07-03T14:22:08",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.63,
+    "timestamp": "2026-07-03T15:08:19",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 3.16,
+    "timestamp": "2026-07-03T15:24:37",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 1.66,
+    "timestamp": "2026-07-03T15:52:32",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 1.09,
+    "timestamp": "2026-07-03T16:07:02",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 1.59,
+    "timestamp": "2026-07-03T16:11:49",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 16.64,
+    "timestamp": "2026-07-03T18:27:24",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 9.39,
+    "timestamp": "2026-07-04T08:04:52",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 14.56,
+    "timestamp": "2026-07-04T09:17:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 10.49,
+    "timestamp": "2026-07-04T09:20:52",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 4.32,
+    "timestamp": "2026-07-04T09:24:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 0.82,
+    "timestamp": "2026-07-04T09:45:33",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 19.17,
+    "timestamp": "2026-07-04T10:04:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.21,
+    "timestamp": "2026-07-04T10:09:52",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 13.05,
+    "timestamp": "2026-07-04T10:24:09",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 10.29,
+    "timestamp": "2026-07-04T10:40:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 4.6,
+    "timestamp": "2026-07-04T10:49:21",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 4.08,
+    "timestamp": "2026-07-04T10:57:44",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 6.42,
+    "timestamp": "2026-07-04T11:06:27",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 4.45,
+    "timestamp": "2026-07-04T11:40:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 13.93,
+    "timestamp": "2026-07-04T12:06:10",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 0.6,
+    "timestamp": "2026-07-04T12:10:15",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 11.31,
+    "timestamp": "2026-07-04T14:09:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 17.51,
+    "timestamp": "2026-07-04T14:32:11",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 16.78,
+    "timestamp": "2026-07-04T15:10:51",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 3.83,
+    "timestamp": "2026-07-04T16:35:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 13.32,
+    "timestamp": "2026-07-04T16:36:51",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 1.48,
+    "timestamp": "2026-07-04T16:52:20",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 11.04,
+    "timestamp": "2026-07-04T17:07:20",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 2.15,
+    "timestamp": "2026-07-04T17:14:01",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 5.59,
+    "timestamp": "2026-07-05T09:41:11",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 1.67,
+    "timestamp": "2026-07-05T10:26:21",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 7.56,
+    "timestamp": "2026-07-05T10:27:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 3.59,
+    "timestamp": "2026-07-05T10:51:58",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 3.81,
+    "timestamp": "2026-07-05T11:24:46",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 10.51,
+    "timestamp": "2026-07-05T11:45:38",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 4.11,
+    "timestamp": "2026-07-05T12:20:59",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 1.83,
+    "timestamp": "2026-07-05T12:56:42",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 4.32,
+    "timestamp": "2026-07-05T13:13:15",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 12.95,
+    "timestamp": "2026-07-05T13:29:02",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 14.76,
+    "timestamp": "2026-07-05T14:54:29",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 5.28,
+    "timestamp": "2026-07-05T15:07:06",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 7.47,
+    "timestamp": "2026-07-05T16:49:34",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 4.34,
+    "timestamp": "2026-07-05T16:50:16",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 9.14,
+    "timestamp": "2026-07-05T17:22:10",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 3.97,
+    "timestamp": "2026-07-05T17:48:22",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 1.77,
+    "timestamp": "2026-07-06T10:28:48",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 0.97,
+    "timestamp": "2026-07-06T12:27:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 6.0,
+    "timestamp": "2026-07-06T12:30:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 6.64,
+    "timestamp": "2026-07-06T12:54:33",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 7.98,
+    "timestamp": "2026-07-06T13:39:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 4.76,
+    "timestamp": "2026-07-06T14:02:34",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 12.96,
+    "timestamp": "2026-07-06T14:23:24",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 8.15,
+    "timestamp": "2026-07-06T14:28:59",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 19.83,
+    "timestamp": "2026-07-06T15:02:13",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 10.04,
+    "timestamp": "2026-07-06T16:27:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 8.61,
+    "timestamp": "2026-07-06T16:28:04",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 3.25,
+    "timestamp": "2026-07-06T16:51:52",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 14.87,
+    "timestamp": "2026-07-06T17:19:18",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 5.31,
+    "timestamp": "2026-07-06T17:34:21",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 9.52,
+    "timestamp": "2026-07-07T08:52:48",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 5.02,
+    "timestamp": "2026-07-07T08:55:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 8.97,
+    "timestamp": "2026-07-07T09:44:27",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.41,
+    "timestamp": "2026-07-07T10:16:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 3.0,
+    "timestamp": "2026-07-07T10:58:52",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 11.02,
+    "timestamp": "2026-07-07T13:18:34",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 9.75,
+    "timestamp": "2026-07-07T14:12:49",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 13.5,
+    "timestamp": "2026-07-07T14:19:24",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 8.61,
+    "timestamp": "2026-07-07T14:33:16",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 16.98,
+    "timestamp": "2026-07-07T15:36:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.95,
+    "timestamp": "2026-07-07T15:36:10",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 8.57,
+    "timestamp": "2026-07-07T16:24:33",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 5.05,
+    "timestamp": "2026-07-07T17:00:37",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 12.45,
+    "timestamp": "2026-07-08T11:34:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 7.31,
+    "timestamp": "2026-07-08T12:16:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 4.0,
+    "timestamp": "2026-07-08T12:30:06",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 8.98,
+    "timestamp": "2026-07-08T12:31:13",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 17.22,
+    "timestamp": "2026-07-08T12:34:09",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 5.51,
+    "timestamp": "2026-07-08T12:42:21",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 4.87,
+    "timestamp": "2026-07-08T13:47:36",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 4.33,
+    "timestamp": "2026-07-08T14:09:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 4.08,
+    "timestamp": "2026-07-08T14:12:18",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 11.36,
+    "timestamp": "2026-07-08T14:12:30",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 3.55,
+    "timestamp": "2026-07-08T15:12:53",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 5.03,
+    "timestamp": "2026-07-08T15:18:08",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 11.26,
+    "timestamp": "2026-07-08T16:06:28",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 15.86,
+    "timestamp": "2026-07-08T16:08:40",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 13.03,
+    "timestamp": "2026-07-08T16:16:59",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 8.25,
+    "timestamp": "2026-07-08T16:58:16",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 0.53,
+    "timestamp": "2026-07-08T17:09:24",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 9.77,
+    "timestamp": "2026-07-09T08:06:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 5.49,
+    "timestamp": "2026-07-09T08:18:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 6.5,
+    "timestamp": "2026-07-09T09:06:11",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 1.69,
+    "timestamp": "2026-07-09T09:35:07",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 6.19,
+    "timestamp": "2026-07-09T09:38:29",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 13.33,
+    "timestamp": "2026-07-09T10:30:01",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 9.59,
+    "timestamp": "2026-07-09T10:32:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 13.4,
+    "timestamp": "2026-07-09T12:13:37",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 12.61,
+    "timestamp": "2026-07-09T12:14:26",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.67,
+    "timestamp": "2026-07-09T12:20:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 18.06,
+    "timestamp": "2026-07-09T12:22:03",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.71,
+    "timestamp": "2026-07-09T12:58:13",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 7.13,
+    "timestamp": "2026-07-09T13:03:15",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 9.81,
+    "timestamp": "2026-07-09T13:29:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 9.06,
+    "timestamp": "2026-07-09T14:20:37",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 1.72,
+    "timestamp": "2026-07-09T14:33:12",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 14.36,
+    "timestamp": "2026-07-09T14:57:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 0.75,
+    "timestamp": "2026-07-09T15:11:41",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 5.87,
+    "timestamp": "2026-07-09T15:23:38",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 12.91,
+    "timestamp": "2026-07-09T15:47:55",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 4.38,
+    "timestamp": "2026-07-09T16:08:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 2.43,
+    "timestamp": "2026-07-09T16:27:14",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 1.51,
+    "timestamp": "2026-07-09T16:37:53",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 0.5,
+    "timestamp": "2026-07-09T17:10:34",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.35,
+    "timestamp": "2026-07-10T10:35:56",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 2.15,
+    "timestamp": "2026-07-10T12:09:22",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 0.85,
+    "timestamp": "2026-07-10T12:16:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 2.92,
+    "timestamp": "2026-07-10T13:01:00",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 3.74,
+    "timestamp": "2026-07-10T13:13:38",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 2.25,
+    "timestamp": "2026-07-10T14:15:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 7.8,
+    "timestamp": "2026-07-10T15:16:45",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 11.92,
+    "timestamp": "2026-07-10T16:07:54",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 19.95,
+    "timestamp": "2026-07-10T16:08:42",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 3.71,
+    "timestamp": "2026-07-10T16:43:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 2.51,
+    "timestamp": "2026-07-10T17:26:19",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 10.19,
+    "timestamp": "2026-07-10T17:41:17",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 9.98,
+    "timestamp": "2026-07-11T09:03:19",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 8.48,
+    "timestamp": "2026-07-11T09:53:50",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 13.54,
+    "timestamp": "2026-07-11T11:36:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 13.21,
+    "timestamp": "2026-07-11T13:09:53",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 4.69,
+    "timestamp": "2026-07-11T13:42:26",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 3.51,
+    "timestamp": "2026-07-11T14:47:14",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 9.56,
+    "timestamp": "2026-07-11T14:47:25",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 1.28,
+    "timestamp": "2026-07-11T15:03:29",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 11.87,
+    "timestamp": "2026-07-11T15:41:01",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 1.64,
+    "timestamp": "2026-07-11T16:00:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 4.48,
+    "timestamp": "2026-07-11T16:26:25",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.68,
+    "timestamp": "2026-07-11T16:39:53",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 10.82,
+    "timestamp": "2026-07-11T16:50:25",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 19.64,
+    "timestamp": "2026-07-11T17:17:58",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 4.69,
+    "timestamp": "2026-07-12T09:50:04",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 8.66,
+    "timestamp": "2026-07-12T09:59:05",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 12.44,
+    "timestamp": "2026-07-12T11:23:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 7.2,
+    "timestamp": "2026-07-12T12:46:43",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 7.33,
+    "timestamp": "2026-07-12T13:32:31",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 5.36,
+    "timestamp": "2026-07-12T14:16:41",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 8.91,
+    "timestamp": "2026-07-12T15:02:38",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 18.49,
+    "timestamp": "2026-07-12T16:12:59",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 2.69,
+    "timestamp": "2026-07-12T16:22:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 0.96,
+    "timestamp": "2026-07-12T17:16:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 7.49,
+    "timestamp": "2026-07-13T11:12:07",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 9.61,
+    "timestamp": "2026-07-13T12:40:03",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 8.98,
+    "timestamp": "2026-07-13T13:23:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 8.24,
+    "timestamp": "2026-07-13T14:03:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 5.65,
+    "timestamp": "2026-07-13T14:10:45",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 19.55,
+    "timestamp": "2026-07-13T14:59:00",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 6.05,
+    "timestamp": "2026-07-13T15:41:58",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 17.2,
+    "timestamp": "2026-07-13T15:46:07",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 12.31,
+    "timestamp": "2026-07-13T15:50:20",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 11.79,
+    "timestamp": "2026-07-13T16:32:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 8.93,
+    "timestamp": "2026-07-13T16:49:33",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 8.93,
+    "timestamp": "2026-07-13T16:57:50",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 11.24,
+    "timestamp": "2026-07-13T17:05:26",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 9.78,
+    "timestamp": "2026-07-13T17:19:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 1.18,
+    "timestamp": "2026-07-13T17:23:52",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 10.4,
+    "timestamp": "2026-07-13T17:40:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.8,
+    "timestamp": "2026-07-14T08:14:55",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 4.07,
+    "timestamp": "2026-07-14T09:06:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 5.46,
+    "timestamp": "2026-07-14T09:11:57",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 5.53,
+    "timestamp": "2026-07-14T09:16:07",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 3.55,
+    "timestamp": "2026-07-14T09:48:13",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 9.6,
+    "timestamp": "2026-07-14T10:17:39",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 13.6,
+    "timestamp": "2026-07-14T10:50:59",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 11.07,
+    "timestamp": "2026-07-14T13:18:23",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 4.7,
+    "timestamp": "2026-07-14T14:00:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 2.5,
+    "timestamp": "2026-07-14T14:03:23",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 11.02,
+    "timestamp": "2026-07-14T14:24:25",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 4.97,
+    "timestamp": "2026-07-14T15:19:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 13.93,
+    "timestamp": "2026-07-14T15:49:40",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.04,
+    "timestamp": "2026-07-14T16:24:34",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.66,
+    "timestamp": "2026-07-14T16:30:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 5.31,
+    "timestamp": "2026-07-14T16:32:18",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 2.91,
+    "timestamp": "2026-07-14T16:46:02",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 11.18,
+    "timestamp": "2026-07-14T17:46:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 19.4,
+    "timestamp": "2026-07-14T18:40:58",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 6.37,
+    "timestamp": "2026-07-14T18:54:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 1.59,
+    "timestamp": "2026-07-15T09:08:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 5.02,
+    "timestamp": "2026-07-15T10:17:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 4.33,
+    "timestamp": "2026-07-15T12:30:36",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.12,
+    "timestamp": "2026-07-15T13:10:17",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 3.3,
+    "timestamp": "2026-07-15T13:19:58",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 12.99,
+    "timestamp": "2026-07-15T13:26:39",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 7.06,
+    "timestamp": "2026-07-15T13:56:02",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 5.4,
+    "timestamp": "2026-07-15T13:57:14",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 1.9,
+    "timestamp": "2026-07-15T14:49:58",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 7.48,
+    "timestamp": "2026-07-15T14:50:26",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 5.87,
+    "timestamp": "2026-07-15T16:08:32",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 7.29,
+    "timestamp": "2026-07-15T16:48:27",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 15.17,
+    "timestamp": "2026-07-15T17:46:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 19.53,
+    "timestamp": "2026-07-15T18:06:18",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.38,
+    "timestamp": "2026-07-16T09:40:01",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 12.15,
+    "timestamp": "2026-07-16T09:41:03",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 4.99,
+    "timestamp": "2026-07-16T10:04:31",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 7.62,
+    "timestamp": "2026-07-16T10:51:55",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 7.98,
+    "timestamp": "2026-07-16T12:01:27",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 3.18,
+    "timestamp": "2026-07-16T12:09:31",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.19,
+    "timestamp": "2026-07-16T12:20:12",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 7.48,
+    "timestamp": "2026-07-16T12:25:51",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 3.82,
+    "timestamp": "2026-07-16T13:32:39",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 7.43,
+    "timestamp": "2026-07-16T13:36:05",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 1.81,
+    "timestamp": "2026-07-16T13:38:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 4.93,
+    "timestamp": "2026-07-16T13:47:13",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 12.91,
+    "timestamp": "2026-07-16T13:59:45",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 19.95,
+    "timestamp": "2026-07-16T14:51:39",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 4.98,
+    "timestamp": "2026-07-16T15:04:15",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 0.63,
+    "timestamp": "2026-07-16T15:28:26",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 8.53,
+    "timestamp": "2026-07-16T16:37:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 12.89,
+    "timestamp": "2026-07-16T16:44:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 19.92,
+    "timestamp": "2026-07-16T17:39:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 6.8,
+    "timestamp": "2026-07-16T17:44:25",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 17.75,
+    "timestamp": "2026-07-16T17:57:14",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 8.64,
+    "timestamp": "2026-07-16T18:47:55",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 11.84,
+    "timestamp": "2026-07-17T09:55:52",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 5.38,
+    "timestamp": "2026-07-17T10:57:35",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 5.58,
+    "timestamp": "2026-07-17T11:41:08",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 1.72,
+    "timestamp": "2026-07-17T11:45:21",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 4.25,
+    "timestamp": "2026-07-17T11:57:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 2.36,
+    "timestamp": "2026-07-17T12:26:48",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 6.49,
+    "timestamp": "2026-07-17T12:36:48",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 8.54,
+    "timestamp": "2026-07-17T12:58:01",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 2.93,
+    "timestamp": "2026-07-17T13:56:40",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 19.76,
+    "timestamp": "2026-07-17T14:50:16",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 11.87,
+    "timestamp": "2026-07-17T15:04:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 2.52,
+    "timestamp": "2026-07-17T15:09:48",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 14.06,
+    "timestamp": "2026-07-17T15:31:17",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 3.16,
+    "timestamp": "2026-07-17T17:18:09",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 14.89,
+    "timestamp": "2026-07-17T17:52:41",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 11.47,
+    "timestamp": "2026-07-17T17:53:28",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 3.69,
+    "timestamp": "2026-07-17T17:58:42",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 3.13,
+    "timestamp": "2026-07-18T09:51:06",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 11.43,
+    "timestamp": "2026-07-18T11:29:20",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 7.18,
+    "timestamp": "2026-07-18T11:43:27",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 18.11,
+    "timestamp": "2026-07-18T12:35:05",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 13.0,
+    "timestamp": "2026-07-18T12:49:26",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 16.59,
+    "timestamp": "2026-07-18T12:49:48",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.05,
+    "timestamp": "2026-07-18T14:09:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 9.46,
+    "timestamp": "2026-07-18T14:17:52",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 9.97,
+    "timestamp": "2026-07-18T14:18:35",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 4.31,
+    "timestamp": "2026-07-18T14:57:43",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 2.85,
+    "timestamp": "2026-07-18T14:57:47",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 16.08,
+    "timestamp": "2026-07-18T15:31:49",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 5.41,
+    "timestamp": "2026-07-18T16:40:26",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 12.58,
+    "timestamp": "2026-07-18T17:23:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.48,
+    "timestamp": "2026-07-18T17:30:43",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 18.28,
+    "timestamp": "2026-07-18T18:59:02",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 6.64,
+    "timestamp": "2026-07-19T08:04:58",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 5.08,
+    "timestamp": "2026-07-19T09:01:24",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 7.41,
+    "timestamp": "2026-07-19T09:18:24",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 6.14,
+    "timestamp": "2026-07-19T09:35:29",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 7.23,
+    "timestamp": "2026-07-19T09:38:44",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 11.93,
+    "timestamp": "2026-07-19T09:53:08",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 5.45,
+    "timestamp": "2026-07-19T11:03:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 6.95,
+    "timestamp": "2026-07-19T13:00:37",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 5.42,
+    "timestamp": "2026-07-19T13:36:07",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 4.19,
+    "timestamp": "2026-07-19T13:36:08",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 0.68,
+    "timestamp": "2026-07-19T14:56:23",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 0.7,
+    "timestamp": "2026-07-19T15:17:02",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 6.35,
+    "timestamp": "2026-07-19T16:10:12",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 18.25,
+    "timestamp": "2026-07-19T16:42:12",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 3.72,
+    "timestamp": "2026-07-19T16:57:40",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 3.89,
+    "timestamp": "2026-07-20T09:05:17",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 8.38,
+    "timestamp": "2026-07-20T10:25:40",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 6.96,
+    "timestamp": "2026-07-20T11:38:47",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 10.01,
+    "timestamp": "2026-07-20T12:30:51",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.32,
+    "timestamp": "2026-07-20T12:33:22",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.95,
+    "timestamp": "2026-07-20T14:15:31",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 2.66,
+    "timestamp": "2026-07-20T14:51:47",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 13.08,
+    "timestamp": "2026-07-20T15:39:26",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 12.37,
+    "timestamp": "2026-07-20T16:54:18",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 3.81,
+    "timestamp": "2026-07-20T17:27:57",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 7.74,
+    "timestamp": "2026-07-21T08:52:18",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 9.98,
+    "timestamp": "2026-07-21T10:19:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 9.98,
+    "timestamp": "2026-07-21T10:32:12",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 2.52,
+    "timestamp": "2026-07-21T11:10:42",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 2.97,
+    "timestamp": "2026-07-21T11:59:15",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 2.56,
+    "timestamp": "2026-07-21T12:40:39",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 13.45,
+    "timestamp": "2026-07-21T13:12:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 2.86,
+    "timestamp": "2026-07-21T13:32:20",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.56,
+    "timestamp": "2026-07-21T15:03:34",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 9.52,
+    "timestamp": "2026-07-21T15:59:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 1.37,
+    "timestamp": "2026-07-21T16:00:37",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.37,
+    "timestamp": "2026-07-21T16:59:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 18.64,
+    "timestamp": "2026-07-21T17:29:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 7.47,
+    "timestamp": "2026-07-22T08:26:19",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 8.68,
+    "timestamp": "2026-07-22T08:28:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 1.29,
+    "timestamp": "2026-07-22T08:47:42",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 1.85,
+    "timestamp": "2026-07-22T10:02:05",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 16.08,
+    "timestamp": "2026-07-22T11:01:22",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 6.33,
+    "timestamp": "2026-07-22T11:24:35",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 3.53,
+    "timestamp": "2026-07-22T13:36:57",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 3.39,
+    "timestamp": "2026-07-22T14:27:02",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 0.74,
+    "timestamp": "2026-07-22T14:39:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 1.52,
+    "timestamp": "2026-07-22T14:43:49",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "cloud_upload",
+    "volume_mb": 5.61,
+    "timestamp": "2026-07-22T16:51:02",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 6.2,
+    "timestamp": "2026-07-23T08:09:36",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 8.07,
+    "timestamp": "2026-07-23T09:15:58",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 7.94,
+    "timestamp": "2026-07-23T09:35:12",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 6.13,
+    "timestamp": "2026-07-23T09:36:03",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 2.23,
+    "timestamp": "2026-07-23T09:46:30",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "download",
+    "volume_mb": 9.95,
+    "timestamp": "2026-07-23T09:47:46",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 1.73,
+    "timestamp": "2026-07-23T09:56:28",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 16.92,
+    "timestamp": "2026-07-23T10:13:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "email_attachment",
+    "volume_mb": 2.31,
+    "timestamp": "2026-07-23T10:30:25",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "cloud_upload",
+    "volume_mb": 10.77,
+    "timestamp": "2026-07-23T10:40:25",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 6.7,
+    "timestamp": "2026-07-23T10:54:44",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "download",
+    "volume_mb": 7.79,
+    "timestamp": "2026-07-23T11:31:50",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "file_access",
+    "volume_mb": 6.49,
+    "timestamp": "2026-07-23T11:33:42",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 5.06,
+    "timestamp": "2026-07-23T11:37:41",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 19.46,
+    "timestamp": "2026-07-23T11:40:01",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 5.12,
+    "timestamp": "2026-07-23T12:20:32",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 14.96,
+    "timestamp": "2026-07-23T12:23:12",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 1.7,
+    "timestamp": "2026-07-23T12:31:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 9.45,
+    "timestamp": "2026-07-23T12:37:38",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 16.38,
+    "timestamp": "2026-07-23T12:50:48",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 16.04,
+    "timestamp": "2026-07-23T13:27:11",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 8.31,
+    "timestamp": "2026-07-23T14:08:54",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "download",
+    "volume_mb": 4.68,
+    "timestamp": "2026-07-23T15:43:49",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_alice",
+    "action": "file_access",
+    "volume_mb": 4.57,
+    "timestamp": "2026-07-23T15:47:18",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "file_access",
+    "volume_mb": 19.67,
+    "timestamp": "2026-07-23T15:59:34",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_bob",
+    "action": "usb_copy",
+    "volume_mb": 4.49,
+    "timestamp": "2026-07-23T16:09:29",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 1.04,
+    "timestamp": "2026-07-23T16:26:33",
+    "score": 10,
+    "level": "LOW",
+    "reasons": [
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 18.18,
+    "timestamp": "2026-07-23T16:32:33",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "email_attachment",
+    "volume_mb": 2.81,
+    "timestamp": "2026-07-23T16:44:44",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  },
+  {
+    "user_id": "u_carol",
+    "action": "usb_copy",
+    "volume_mb": 1.0,
+    "timestamp": "2026-07-23T18:06:26",
+    "score": 15,
+    "level": "LOW",
+    "reasons": [
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_alice",
+    "action": "usb_copy",
+    "volume_mb": 480.0,
+    "timestamp": "2026-07-23T02:15:00",
+    "score": 85,
+    "level": "HIGH",
+    "reasons": [
+      "Activity at hour 2 is outside normal range (9-17)",
+      "Volume 480.0MB is far above normal (z-score 107.91)",
+      "Action 'usb_copy' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_bob",
+    "action": "cloud_upload",
+    "volume_mb": 320.0,
+    "timestamp": "2026-07-23T23:40:00",
+    "score": 80,
+    "level": "HIGH",
+    "reasons": [
+      "Activity at hour 23 is outside normal range (8-16)",
+      "Volume 320.0MB is far above normal (z-score 112.72)",
+      "Action 'cloud_upload' is inherently higher risk"
+    ]
+  },
+  {
+    "user_id": "u_carol",
+    "action": "email_attachment",
+    "volume_mb": 9.5,
+    "timestamp": "2026-07-23T14:00:00",
+    "score": 0,
+    "level": "LOW",
+    "reasons": []
+  }
+]
