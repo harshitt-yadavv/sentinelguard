@@ -14,7 +14,62 @@ function SortableHeader({ label, sortField, sortKey, sortDir, onSort }) {
   );
 }
 
+function LoginForm({ onLogin }) {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      const res = await fetch("http://localhost:4000/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        setError(data.error || "Login failed");
+        return;
+      }
+      const data = await res.json();
+      onLogin(data.token, data.role);
+    } catch (err) {
+      setError("Could not reach backend server");
+    }
+  };
+
+  return (
+    <div className="login-wrap">
+      <form className="login-form" onSubmit={handleSubmit}>
+        <h1>SentinelGuard</h1>
+        <p className="login-subtitle">Sign in to view alerts</p>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        {error && <div className="login-error">{error}</div>}
+        <button type="submit">Log In</button>
+        <p className="login-hint">
+          Demo accounts: admin / admin123 &nbsp;or&nbsp; analyst / analyst123
+        </p>
+      </form>
+    </div>
+  );
+}
+
 function App() {
+  const [token, setToken] = useState(localStorageGet());
+  const [role, setRole] = useState(null);
   const [events, setEvents] = useState([]);
   const [alerts, setAlerts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -22,11 +77,31 @@ function App() {
   const [sortKey, setSortKey] = useState("timestamp");
   const [sortDir, setSortDir] = useState("desc");
 
+  function localStorageGet() {
+    return null; // artifacts/dashboards in this project don't persist tokens across reloads
+  }
+
+  const handleLogin = (newToken, newRole) => {
+    setToken(newToken);
+    setRole(newRole);
+  };
+
+  const handleLogout = () => {
+    setToken(null);
+    setRole(null);
+    setAlerts([]);
+  };
+
   const fetchData = useCallback(() => {
-    Promise.all([
-      fetch("http://localhost:4000/api/events").then((res) => res.json()),
-      fetch("http://localhost:4000/api/alerts").then((res) => res.json()),
-    ])
+    const eventsPromise = fetch("http://localhost:4000/api/events").then((res) => res.json());
+    const alertsPromise = fetch("http://localhost:4000/api/alerts", {
+      headers: { Authorization: `Bearer ${token}` },
+    }).then((res) => {
+      if (!res.ok) throw new Error("Unauthorized");
+      return res.json();
+    });
+
+    Promise.all([eventsPromise, alertsPromise])
       .then(([eventsData, alertsData]) => {
         setEvents(eventsData);
         setAlerts(alertsData);
@@ -37,13 +112,14 @@ function App() {
         console.error("Failed to fetch from backend:", err);
         setLoading(false);
       });
-  }, []);
+  }, [token]);
 
   useEffect(() => {
+    if (!token) return;
     fetchData();
     const interval = setInterval(fetchData, REFRESH_INTERVAL_MS);
     return () => clearInterval(interval);
-  }, [fetchData]);
+  }, [token, fetchData]);
 
   const handleSort = (key) => {
     if (sortKey === key) {
@@ -75,6 +151,10 @@ function App() {
       user: e.user_id,
     }));
 
+  if (!token) {
+    return <LoginForm onLogin={handleLogin} />;
+  }
+
   if (loading) {
     return <div className="app">Loading SentinelGuard data...</div>;
   }
@@ -84,8 +164,10 @@ function App() {
       <div className="header-row">
         <h1>SentinelGuard Dashboard</h1>
         <span className="last-updated">
+          Logged in as <strong>{role}</strong> ·{" "}
           {lastUpdated && `Last updated: ${lastUpdated.toLocaleTimeString()}`}
-          {" · auto-refreshes every 10s"}
+          {" · auto-refreshes every 10s"} ·{" "}
+          <button className="logout-btn" onClick={handleLogout}>Log out</button>
         </span>
       </div>
 

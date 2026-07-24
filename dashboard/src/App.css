@@ -59,3 +59,81 @@ th.sortable {
 th.sortable:hover {
   background-color: #2a2a4a;
 }
+
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f0f1e;
+}
+
+.login-form {
+  background: #1a1a2e;
+  padding: 40px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-form h1 {
+  margin: 0 0 4px;
+}
+
+.login-subtitle {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #0f0f1e;
+  color: white;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background: #4ea8de;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #3a8fc7;
+}
+
+.login-error {
+  color: #ff6b6b;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.login-hint {
+  font-size: 11px;
+  color: #777;
+  margin-top: 16px;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.logout-btn:hover {
+  border-color: #999;
+}
