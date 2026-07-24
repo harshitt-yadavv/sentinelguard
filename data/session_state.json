@@ -1,0 +1,35 @@
+{
+  "u_alice": {
+    "status": "SESSION_LOCKED",
+    "triggering_event": {
+      "action": "usb_copy",
+      "volume_mb": 480,
+      "timestamp": "2026-07-24T02:15:00",
+      "score": 85,
+      "level": "HIGH"
+    },
+    "acknowledged": false
+  },
+  "u_carol": {
+    "status": "SESSION_LOCKED",
+    "triggering_event": {
+      "action": "download",
+      "volume_mb": 150.58,
+      "timestamp": "2026-07-24T01:20:00",
+      "score": 70,
+      "level": "HIGH"
+    },
+    "acknowledged": false
+  },
+  "u_bob": {
+    "status": "SESSION_LOCKED",
+    "triggering_event": {
+      "action": "usb_copy",
+      "volume_mb": 26.69,
+      "timestamp": "2026-07-24T03:08:00",
+      "score": 85,
+      "level": "HIGH"
+    },
+    "acknowledged": false
+  }
+}
