@@ -6,6 +6,14 @@ import "./App.css";
 
 const REFRESH_INTERVAL_MS = 10000; // 10 seconds
 
+function SortableHeader({ label, sortField, sortKey, sortDir, onSort }) {
+  return (
+    <th onClick={() => onSort(sortField)} className="sortable">
+      {label} {sortKey === sortField ? (sortDir === "asc" ? "▲" : "▼") : ""}
+    </th>
+  );
+}
+
 function App() {
   const [events, setEvents] = useState([]);
   const [alerts, setAlerts] = useState([]);
@@ -66,12 +74,6 @@ function App() {
       score: e.score,
       user: e.user_id,
     }));
-
-  const SortableHeader = ({ label, sortField }) => (
-    <th onClick={() => handleSort(sortField)} className="sortable">
-      {label} {sortKey === sortField ? (sortDir === "asc" ? "▲" : "▼") : ""}
-    </th>
-  );
 
   if (loading) {
     return <div className="app">Loading SentinelGuard data...</div>;
@@ -140,12 +142,12 @@ function App() {
         <table>
           <thead>
             <tr>
-              <SortableHeader label="User" sortField="user_id" />
-              <SortableHeader label="Action" sortField="action" />
-              <SortableHeader label="Volume (MB)" sortField="volume_mb" />
-              <SortableHeader label="Time" sortField="timestamp" />
-              <SortableHeader label="Score" sortField="score" />
-              <SortableHeader label="Level" sortField="level" />
+              <SortableHeader label="User" sortField="user_id" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+              <SortableHeader label="Action" sortField="action" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+              <SortableHeader label="Volume (MB)" sortField="volume_mb" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+              <SortableHeader label="Time" sortField="timestamp" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+              <SortableHeader label="Score" sortField="score" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
+              <SortableHeader label="Level" sortField="level" sortKey={sortKey} sortDir={sortDir} onSort={handleSort} />
             </tr>
           </thead>
           <tbody>
