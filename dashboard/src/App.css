@@ -137,3 +137,22 @@ th.sortable:hover {
 .logout-btn:hover {
   border-color: #999;
 }
+
+.ack-btn {
+  background: #4ea8de;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.ack-btn:hover {
+  background: #3a8fc7;
+}
+
+.ack-done {
+  color: #6bcB77;
+  font-size: 13px;
+}

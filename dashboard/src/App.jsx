@@ -76,6 +76,7 @@ function App() {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [sortKey, setSortKey] = useState("timestamp");
   const [sortDir, setSortDir] = useState("desc");
+  const [sessionState, setSessionState] = useState({});
 
   const handleLogin = (newToken, newRole) => {
     setToken(newToken);
@@ -88,7 +89,7 @@ function App() {
     setAlerts([]);
   };
 
-  const fetchData = () => {
+ const fetchData = () => {
     const eventsPromise = fetch("http://localhost:4000/api/events").then((res) => res.json());
     const alertsPromise = fetch("http://localhost:4000/api/alerts", {
       headers: { Authorization: `Bearer ${token}` },
@@ -96,11 +97,18 @@ function App() {
       if (!res.ok) throw new Error("Unauthorized");
       return res.json();
     });
+    const sessionPromise = fetch("http://localhost:4000/api/session-state", {
+      headers: { Authorization: `Bearer ${token}` },
+    }).then((res) => {
+      if (!res.ok) throw new Error("Unauthorized");
+      return res.json();
+    });
 
-    Promise.all([eventsPromise, alertsPromise])
-      .then(([eventsData, alertsData]) => {
+    Promise.all([eventsPromise, alertsPromise, sessionPromise])
+      .then(([eventsData, alertsData, sessionData]) => {
         setEvents(eventsData);
         setAlerts(alertsData);
+        setSessionState(sessionData);
         setLoading(false);
         setLastUpdated(new Date());
       })
@@ -124,6 +132,24 @@ function App() {
     } else {
       setSortKey(key);
       setSortDir("desc");
+    }
+  };
+
+  const handleAcknowledge = async (userId) => {
+    try {
+      const res = await fetch(`http://localhost:4000/api/acknowledge/${userId}`, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        alert(data.error || "Failed to acknowledge");
+        return;
+      }
+      const updated = await res.json();
+      setSessionState(updated);
+    } catch {
+      alert("Could not reach backend server");
     }
   };
 
@@ -170,6 +196,44 @@ function App() {
 
       <section>
         <h2>🚨 Active Alerts ({alerts.length})</h2>
+        <section>
+        <h2>👤 User Session Status</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Status</th>
+              <th>Triggering Event</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(sessionState).map(([userId, state]) => (
+              <tr key={userId} className={
+                state.status === "SESSION_LOCKED" ? "row-high" :
+                state.status === "ADMIN_ALERTED" ? "row-medium" : ""
+              }>
+                <td>{userId}</td>
+                <td>{state.status}</td>
+                <td>
+                  {state.triggering_event
+                    ? `${state.triggering_event.action}, ${state.triggering_event.volume_mb}MB, ${new Date(state.triggering_event.timestamp).toLocaleString()}`
+                    : "—"}
+                </td>
+                <td>
+                  {state.status !== "LOGGED_ONLY" && !state.acknowledged && role === "admin" && (
+                    <button className="ack-btn" onClick={() => handleAcknowledge(userId)}>
+                      Acknowledge
+                    </button>
+                  )}
+                  {state.acknowledged && <span className="ack-done">✓ Cleared</span>}
+                  {role !== "admin" && state.status !== "LOGGED_ONLY" && <span>(admin only)</span>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
         <table>
           <thead>
             <tr>
