@@ -44,29 +44,68 @@ def generate_dataset(n_events=500):
 def generate_attack_events():
     """
     Deliberately suspicious events, used to test whether the risk engine
-    correctly flags real insider-threat-style behavior.
+    correctly flags real insider-threat-style behavior. Covers the scenario
+    types called out in the project proposal.
     """
     now = datetime.datetime.now()
-    return [
-        {
-            "user_id": "u_alice",
-            "timestamp": now.replace(hour=2, minute=15, second=0, microsecond=0).isoformat(),
-            "action": "usb_copy",
-            "volume_mb": 480.0,  # huge, at 2am - very unusual for Alice
-        },
-        {
-            "user_id": "u_bob",
-            "timestamp": now.replace(hour=23, minute=40, second=0, microsecond=0).isoformat(),
-            "action": "cloud_upload",
-            "volume_mb": 320.0,  # late night, way above Bob's normal ~5MB
-        },
-        {
+    scenarios = []
+
+    # Scenario 1: single huge off-hours USB copy (data theft via removable media)
+    scenarios.append({
+        "user_id": "u_alice",
+        "timestamp": now.replace(hour=2, minute=15, second=0, microsecond=0).isoformat(),
+        "action": "usb_copy",
+        "volume_mb": 480.0,
+    })
+
+    # Scenario 2: single huge off-hours cloud upload (exfiltration via cloud)
+    scenarios.append({
+        "user_id": "u_bob",
+        "timestamp": now.replace(hour=23, minute=40, second=0, microsecond=0).isoformat(),
+        "action": "cloud_upload",
+        "volume_mb": 320.0,
+    })
+
+    # Scenario 3: bulk midnight downloads - repeated large downloads in a short window
+    for i in range(6):
+        scenarios.append({
             "user_id": "u_carol",
-            "timestamp": now.replace(hour=14, minute=0, second=0, microsecond=0).isoformat(),
-            "action": "email_attachment",
-            "volume_mb": 9.5,  # normal hours, normal size - a "control" case, should stay LOW
-        },
-    ]
+            "timestamp": (now.replace(hour=1, minute=0, second=0, microsecond=0)
+                          + datetime.timedelta(minutes=i * 4)).isoformat(),
+            "action": "download",
+            "volume_mb": round(random.uniform(150, 220), 2),
+        })
+
+    # Scenario 4: repeated USB copy attempts - many small copies back-to-back
+    # (individually less extreme, but the *pattern* of repetition is the red flag)
+    for i in range(5):
+        scenarios.append({
+            "user_id": "u_bob",
+            "timestamp": (now.replace(hour=3, minute=0, second=0, microsecond=0)
+                          + datetime.timedelta(minutes=i * 2)).isoformat(),
+            "action": "usb_copy",
+            "volume_mb": round(random.uniform(20, 40), 2),
+        })
+
+    # Scenario 5: sudden cloud-upload spike during work hours (less obviously
+    # suspicious by time, but volume is far outside this user's norm)
+    scenarios.append({
+        "user_id": "u_carol",
+        "timestamp": now.replace(hour=14, minute=30, second=0, microsecond=0).isoformat(),
+        "action": "cloud_upload",
+        "volume_mb": 250.0,
+    })
+
+    # Control case: normal-looking event, should stay LOW (proves the system
+    # doesn't just flag everything)
+    scenarios.append({
+        "user_id": "u_carol",
+        "timestamp": now.replace(hour=14, minute=0, second=0, microsecond=0).isoformat(),
+        "action": "email_attachment",
+        "volume_mb": 9.5,
+    })
+
+    return scenarios
 
 
 if __name__ == "__main__":

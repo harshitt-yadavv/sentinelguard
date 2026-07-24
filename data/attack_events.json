@@ -1,19 +1,91 @@
 [
   {
     "user_id": "u_alice",
-    "timestamp": "2026-07-23T02:15:00",
+    "timestamp": "2026-07-24T02:15:00",
     "action": "usb_copy",
     "volume_mb": 480.0
   },
   {
     "user_id": "u_bob",
-    "timestamp": "2026-07-23T23:40:00",
+    "timestamp": "2026-07-24T23:40:00",
     "action": "cloud_upload",
     "volume_mb": 320.0
   },
   {
     "user_id": "u_carol",
-    "timestamp": "2026-07-23T14:00:00",
+    "timestamp": "2026-07-24T01:00:00",
+    "action": "download",
+    "volume_mb": 166.17
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T01:04:00",
+    "action": "download",
+    "volume_mb": 218.69
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T01:08:00",
+    "action": "download",
+    "volume_mb": 163.01
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T01:12:00",
+    "action": "download",
+    "volume_mb": 194.82
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T01:16:00",
+    "action": "download",
+    "volume_mb": 187.35
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T01:20:00",
+    "action": "download",
+    "volume_mb": 150.58
+  },
+  {
+    "user_id": "u_bob",
+    "timestamp": "2026-07-24T03:00:00",
+    "action": "usb_copy",
+    "volume_mb": 25.59
+  },
+  {
+    "user_id": "u_bob",
+    "timestamp": "2026-07-24T03:02:00",
+    "action": "usb_copy",
+    "volume_mb": 37.53
+  },
+  {
+    "user_id": "u_bob",
+    "timestamp": "2026-07-24T03:04:00",
+    "action": "usb_copy",
+    "volume_mb": 21.71
+  },
+  {
+    "user_id": "u_bob",
+    "timestamp": "2026-07-24T03:06:00",
+    "action": "usb_copy",
+    "volume_mb": 20.09
+  },
+  {
+    "user_id": "u_bob",
+    "timestamp": "2026-07-24T03:08:00",
+    "action": "usb_copy",
+    "volume_mb": 26.69
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T14:30:00",
+    "action": "cloud_upload",
+    "volume_mb": 250.0
+  },
+  {
+    "user_id": "u_carol",
+    "timestamp": "2026-07-24T14:00:00",
     "action": "email_attachment",
     "volume_mb": 9.5
   }
