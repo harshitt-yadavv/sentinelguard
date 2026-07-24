@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine,
 } from "recharts";
@@ -35,7 +35,7 @@ function LoginForm({ onLogin }) {
       }
       const data = await res.json();
       onLogin(data.token, data.role);
-    } catch (err) {
+    } catch {
       setError("Could not reach backend server");
     }
   };
@@ -68,7 +68,7 @@ function LoginForm({ onLogin }) {
 }
 
 function App() {
-  const [token, setToken] = useState(localStorageGet());
+  const [token, setToken] = useState(null);
   const [role, setRole] = useState(null);
   const [events, setEvents] = useState([]);
   const [alerts, setAlerts] = useState([]);
@@ -76,10 +76,6 @@ function App() {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [sortKey, setSortKey] = useState("timestamp");
   const [sortDir, setSortDir] = useState("desc");
-
-  function localStorageGet() {
-    return null; // artifacts/dashboards in this project don't persist tokens across reloads
-  }
 
   const handleLogin = (newToken, newRole) => {
     setToken(newToken);
@@ -92,7 +88,7 @@ function App() {
     setAlerts([]);
   };
 
-  const fetchData = useCallback(() => {
+  const fetchData = () => {
     const eventsPromise = fetch("http://localhost:4000/api/events").then((res) => res.json());
     const alertsPromise = fetch("http://localhost:4000/api/alerts", {
       headers: { Authorization: `Bearer ${token}` },
@@ -112,14 +108,15 @@ function App() {
         console.error("Failed to fetch from backend:", err);
         setLoading(false);
       });
-  }, [token]);
+  };
 
   useEffect(() => {
     if (!token) return;
     fetchData();
     const interval = setInterval(fetchData, REFRESH_INTERVAL_MS);
     return () => clearInterval(interval);
-  }, [token, fetchData]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token]);
 
   const handleSort = (key) => {
     if (sortKey === key) {
