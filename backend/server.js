@@ -6,7 +6,7 @@ const { login, verifyToken } = require("./auth");
 const { processResponses, loadSessionState, loadAuditLog, acknowledgeUser } = require("./response");
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());

@@ -5,6 +5,7 @@ import {
 import "./App.css";
 
 const REFRESH_INTERVAL_MS = 10000; // 10 seconds
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
 function LevelBadge({ level }) {
   const cls = level === "HIGH" ? "badge-high" : level === "MEDIUM" ? "badge-medium" : "badge-low";
@@ -92,7 +93,7 @@ function LoginForm({ onLogin }) {
     e.preventDefault();
     setError("");
     try {
-      const res = await fetch("http://localhost:4000/api/login", {
+      const res = await fetch(`${API_URL}/api/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
@@ -163,14 +164,14 @@ function App() {
   };
 
   const fetchData = () => {
-    const eventsPromise = fetch("http://localhost:4000/api/events").then((res) => res.json());
-    const alertsPromise = fetch("http://localhost:4000/api/alerts", {
+    const eventsPromise = fetch(`${API_URL}/api/events`).then((res) => res.json());
+    const alertsPromise = fetch(`${API_URL}/api/alerts`, {
       headers: { Authorization: `Bearer ${token}` },
     }).then((res) => {
       if (!res.ok) throw new Error("Unauthorized");
       return res.json();
     });
-    const sessionPromise = fetch("http://localhost:4000/api/session-state", {
+    const sessionPromise = fetch(`${API_URL}/api/session-state`, {
       headers: { Authorization: `Bearer ${token}` },
     }).then((res) => {
       if (!res.ok) throw new Error("Unauthorized");
@@ -210,7 +211,7 @@ function App() {
 
   const handleAcknowledge = async (userId) => {
     try {
-      const res = await fetch(`http://localhost:4000/api/acknowledge/${userId}`, {
+      const res = await fetch(`${API_URL}/api/acknowledge/${userId}`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
       });
