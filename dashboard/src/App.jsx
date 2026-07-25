@@ -21,6 +21,48 @@ function StatusBadge({ status }) {
   return <span className={`badge ${cls}`}>{label}</span>;
 }
 
+function ActionIcon({ action }) {
+  const common = { width: 15, height: 15, viewBox: "0 0 24 24", fill: "none", className: "action-icon" };
+  switch (action) {
+    case "usb_copy":
+      return (
+        <svg {...common}>
+          <rect x="8" y="2" width="8" height="6" rx="1" stroke="#ff3b4e" strokeWidth="1.6" />
+          <path d="M12 8v8" stroke="#ff3b4e" strokeWidth="1.6" />
+          <rect x="7" y="16" width="10" height="6" rx="2" stroke="#ff3b4e" strokeWidth="1.6" />
+        </svg>
+      );
+    case "cloud_upload":
+      return (
+        <svg {...common}>
+          <path d="M7 18a4 4 0 0 1-.5-7.97A5 5 0 0 1 16.9 9.1 4.5 4.5 0 0 1 16.5 18H7Z" stroke="#ffb020" strokeWidth="1.6" />
+          <path d="M12 15V9m0 0l-2.5 2.5M12 9l2.5 2.5" stroke="#ffb020" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
+    case "download":
+      return (
+        <svg {...common}>
+          <path d="M12 4v10m0 0l-3.5-3.5M12 14l3.5-3.5" stroke="#4ee2ff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" stroke="#4ee2ff" strokeWidth="1.6" />
+        </svg>
+      );
+    case "email_attachment":
+      return (
+        <svg {...common}>
+          <rect x="3" y="5" width="18" height="14" rx="2" stroke="#00ff9c" strokeWidth="1.6" />
+          <path d="M3 7l9 6 9-6" stroke="#00ff9c" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
+    case "file_access":
+    default:
+      return (
+        <svg {...common}>
+          <path d="M4 6a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Z" stroke="#7fa8a0" strokeWidth="1.6" />
+        </svg>
+      );
+  }
+}
+
 function SortableHeader({ label, sortField, sortKey, sortDir, onSort }) {
   return (
     <th onClick={() => onSort(sortField)} className="sortable">
@@ -254,9 +296,12 @@ function App() {
                   <td>{userId}</td>
                   <td><StatusBadge status={state.status} /></td>
                   <td>
-                    {state.triggering_event
-                      ? `${state.triggering_event.action}, ${state.triggering_event.volume_mb}MB, ${new Date(state.triggering_event.timestamp).toLocaleString()}`
-                      : "—"}
+                    {state.triggering_event ? (
+                      <div className="action-cell">
+                        <ActionIcon action={state.triggering_event.action} />
+                        {`${state.triggering_event.action}, ${state.triggering_event.volume_mb}MB`}
+                      </div>
+                    ) : "—"}
                   </td>
                   <td>
                     {state.status !== "LOGGED_ONLY" && !state.acknowledged && role === "admin" && (
@@ -283,7 +328,7 @@ function App() {
               <tr>
                 <th>User</th>
                 <th>Action</th>
-                <th>Volume (MB)</th>
+                <th>Volume</th>
                 <th>Time</th>
                 <th>Score</th>
                 <th>Level</th>
@@ -293,8 +338,13 @@ function App() {
               {alerts.map((a, i) => (
                 <tr key={i} className={a.level === "HIGH" ? "row-high" : "row-medium"}>
                   <td>{a.user_id}</td>
-                  <td>{a.action}</td>
-                  <td>{a.volume_mb}</td>
+                  <td>
+                    <div className="action-cell">
+                      <ActionIcon action={a.action} />
+                      {a.action}
+                    </div>
+                  </td>
+                  <td>{a.volume_mb} MB</td>
                   <td>{new Date(a.timestamp).toLocaleString()}</td>
                   <td>{a.score}</td>
                   <td><LevelBadge level={a.level} /></td>
@@ -345,7 +395,12 @@ function App() {
             {sortedEvents.slice(0, 20).map((e, i) => (
               <tr key={i}>
                 <td>{e.user_id}</td>
-                <td>{e.action}</td>
+                <td>
+                  <div className="action-cell">
+                    <ActionIcon action={e.action} />
+                    {e.action}
+                  </div>
+                </td>
                 <td>{e.volume_mb}</td>
                 <td>{new Date(e.timestamp).toLocaleString()}</td>
                 <td>{e.score}</td>

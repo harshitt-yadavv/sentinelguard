@@ -484,3 +484,63 @@ th.sortable:hover {
   top: 0;
   z-index: 1;
 }
+
+/* ---------- Action icons ---------- */
+
+.action-cell {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.action-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+/* ---------- Alert glow (ambient pulse on HIGH rows) ---------- */
+
+.row-high {
+  animation: glow-red 2.4s ease-in-out infinite;
+}
+
+.row-medium {
+  animation: glow-amber 2.4s ease-in-out infinite;
+}
+
+@keyframes glow-red {
+  0%, 100% { box-shadow: inset 3px 0 0 var(--red); }
+  50% { box-shadow: inset 3px 0 0 var(--red), inset 0 0 14px rgba(255, 59, 78, 0.15); }
+}
+
+@keyframes glow-amber {
+  0%, 100% { box-shadow: inset 3px 0 0 var(--amber); }
+  50% { box-shadow: inset 3px 0 0 var(--amber), inset 0 0 14px rgba(255, 176, 32, 0.15); }
+}
+
+/* ---------- Spacing / column tuning ---------- */
+
+table {
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 10px 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hud-panel {
+  padding: 22px 24px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  margin-bottom: 6px;
+}
