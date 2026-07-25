@@ -6,11 +6,38 @@ import "./App.css";
 
 const REFRESH_INTERVAL_MS = 10000; // 10 seconds
 
+function LevelBadge({ level }) {
+  const cls = level === "HIGH" ? "badge-high" : level === "MEDIUM" ? "badge-medium" : "badge-low";
+  return <span className={`badge ${cls}`}>{level}</span>;
+}
+
+function StatusBadge({ status }) {
+  const cls =
+    status === "SESSION_LOCKED" ? "badge-locked" :
+    status === "ADMIN_ALERTED" ? "badge-alerted" : "badge-normal";
+  const label =
+    status === "SESSION_LOCKED" ? "LOCKED" :
+    status === "ADMIN_ALERTED" ? "ALERTED" : "NORMAL";
+  return <span className={`badge ${cls}`}>{label}</span>;
+}
+
 function SortableHeader({ label, sortField, sortKey, sortDir, onSort }) {
   return (
     <th onClick={() => onSort(sortField)} className="sortable">
       {label} {sortKey === sortField ? (sortDir === "asc" ? "▲" : "▼") : ""}
     </th>
+  );
+}
+
+function BrandIcon() {
+  return (
+    <svg className="brand-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M20 3 L34 9 V19 C34 27.5 28 33.5 20 37 C12 33.5 6 27.5 6 19 V9 Z"
+        stroke="#4ee2ff" strokeWidth="2" fill="rgba(78,226,255,0.05)"
+      />
+      <path d="M13 20 L18 25 L27 14" stroke="#00ff9c" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
@@ -43,8 +70,11 @@ function LoginForm({ onLogin }) {
   return (
     <div className="login-wrap">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h1>SentinelGuard</h1>
-        <p className="login-subtitle">Sign in to view alerts</p>
+        <div className="brand" style={{ justifyContent: "center", marginBottom: 10 }}>
+          <BrandIcon />
+        </div>
+        <h1>SENTINELGUARD</h1>
+        <p className="login-subtitle">Secure Access Required</p>
         <input
           type="text"
           placeholder="Username"
@@ -58,9 +88,9 @@ function LoginForm({ onLogin }) {
           onChange={(e) => setPassword(e.target.value)}
         />
         {error && <div className="login-error">{error}</div>}
-        <button type="submit">Log In</button>
+        <button type="submit">Authenticate</button>
         <p className="login-hint">
-          Demo accounts: admin / admin123 &nbsp;or&nbsp; analyst / analyst123
+          Demo: admin / admin123 &nbsp;or&nbsp; analyst / analyst123
         </p>
       </form>
     </div>
@@ -72,11 +102,11 @@ function App() {
   const [role, setRole] = useState(null);
   const [events, setEvents] = useState([]);
   const [alerts, setAlerts] = useState([]);
+  const [sessionState, setSessionState] = useState({});
   const [loading, setLoading] = useState(true);
   const [lastUpdated, setLastUpdated] = useState(null);
   const [sortKey, setSortKey] = useState("timestamp");
   const [sortDir, setSortDir] = useState("desc");
-  const [sessionState, setSessionState] = useState({});
 
   const handleLogin = (newToken, newRole) => {
     setToken(newToken);
@@ -87,9 +117,10 @@ function App() {
     setToken(null);
     setRole(null);
     setAlerts([]);
+    setSessionState({});
   };
 
- const fetchData = () => {
+  const fetchData = () => {
     const eventsPromise = fetch("http://localhost:4000/api/events").then((res) => res.json());
     const alertsPromise = fetch("http://localhost:4000/api/alerts", {
       headers: { Authorization: `Bearer ${token}` },
@@ -179,109 +210,126 @@ function App() {
   }
 
   if (loading) {
-    return <div className="app">Loading SentinelGuard data...</div>;
+    return <div className="loading-screen">// Establishing secure connection...</div>;
   }
 
   return (
     <div className="app">
       <div className="header-row">
-        <h1>SentinelGuard Dashboard</h1>
-        <span className="last-updated">
-          Logged in as <strong>{role}</strong> ·{" "}
-          {lastUpdated && `Last updated: ${lastUpdated.toLocaleTimeString()}`}
-          {" · auto-refreshes every 10s"} ·{" "}
-          <button className="logout-btn" onClick={handleLogout}>Log out</button>
-        </span>
+        <div className="brand">
+          <BrandIcon />
+          <div>
+            <h1>SENTINELGUARD</h1>
+            <div className="brand-subtitle">Insider Threat Detection Console</div>
+          </div>
+        </div>
+        <div className="status-strip">
+          <span><span className="status-dot"></span>OPERATIONAL</span>
+          <span className="role-pill">{role}</span>
+          <span>{lastUpdated && lastUpdated.toLocaleTimeString()} · refresh 10s</span>
+          <button className="logout-btn" onClick={handleLogout}>Disconnect</button>
+        </div>
       </div>
 
-      <section>
-        <h2>🚨 Active Alerts ({alerts.length})</h2>
-        <section>
-        <h2>👤 User Session Status</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>User</th>
-              <th>Status</th>
-              <th>Triggering Event</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Object.entries(sessionState).map(([userId, state]) => (
-              <tr key={userId} className={
-                state.status === "SESSION_LOCKED" ? "row-high" :
-                state.status === "ADMIN_ALERTED" ? "row-medium" : ""
-              }>
-                <td>{userId}</td>
-                <td>{state.status}</td>
-                <td>
-                  {state.triggering_event
-                    ? `${state.triggering_event.action}, ${state.triggering_event.volume_mb}MB, ${new Date(state.triggering_event.timestamp).toLocaleString()}`
-                    : "—"}
-                </td>
-                <td>
-                  {state.status !== "LOGGED_ONLY" && !state.acknowledged && role === "admin" && (
-                    <button className="ack-btn" onClick={() => handleAcknowledge(userId)}>
-                      Acknowledge
-                    </button>
-                  )}
-                  {state.acknowledged && <span className="ack-done">✓ Cleared</span>}
-                  {role !== "admin" && state.status !== "LOGGED_ONLY" && <span>(admin only)</span>}
-                </td>
+      <div className="dashboard-grid">
+        <section className="hud-panel">
+          <p className="eyebrow">// User Session Status</p>
+          <h2>Session Monitor</h2>
+          <div className="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Status</th>
+                <th>Triggering Event</th>
+                <th>Action</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
-        <table>
-          <thead>
-            <tr>
-              <th>User</th>
-              <th>Action</th>
-              <th>Volume (MB)</th>
-              <th>Time</th>
-              <th>Risk Score</th>
-              <th>Level</th>
-              <th>Reasons</th>
-            </tr>
-          </thead>
-          <tbody>
-            {alerts.map((a, i) => (
-              <tr key={i} className={a.level === "HIGH" ? "row-high" : "row-medium"}>
-                <td>{a.user_id}</td>
-                <td>{a.action}</td>
-                <td>{a.volume_mb}</td>
-                <td>{new Date(a.timestamp).toLocaleString()}</td>
-                <td>{a.score}</td>
-                <td>{a.level}</td>
-                <td>{a.reasons.join("; ")}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
+            </thead>
+            <tbody>
+              {Object.entries(sessionState).map(([userId, state]) => (
+                <tr key={userId} className={
+                  state.status === "SESSION_LOCKED" ? "row-high" :
+                  state.status === "ADMIN_ALERTED" ? "row-medium" : ""
+                }>
+                  <td>{userId}</td>
+                  <td><StatusBadge status={state.status} /></td>
+                  <td>
+                    {state.triggering_event
+                      ? `${state.triggering_event.action}, ${state.triggering_event.volume_mb}MB, ${new Date(state.triggering_event.timestamp).toLocaleString()}`
+                      : "—"}
+                  </td>
+                  <td>
+                    {state.status !== "LOGGED_ONLY" && !state.acknowledged && role === "admin" && (
+                      <button className="ack-btn" onClick={() => handleAcknowledge(userId)}>
+                        Acknowledge
+                      </button>
+                    )}
+                    {state.acknowledged && <span className="ack-done">✓ Cleared</span>}
+                    {role !== "admin" && state.status !== "LOGGED_ONLY" && <span className="panel-note" style={{ margin: 0 }}>(admin only)</span>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          </div>
+        </section>
 
-      <section>
-        <h2>Risk Score Over Time (most recent 60 events)</h2>
+        <section className="hud-panel">
+          <p className="eyebrow">// Threat Alerts</p>
+          <h2>Active Alerts ({alerts.length})</h2>
+          <div className="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Action</th>
+                <th>Volume (MB)</th>
+                <th>Time</th>
+                <th>Score</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              {alerts.map((a, i) => (
+                <tr key={i} className={a.level === "HIGH" ? "row-high" : "row-medium"}>
+                  <td>{a.user_id}</td>
+                  <td>{a.action}</td>
+                  <td>{a.volume_mb}</td>
+                  <td>{new Date(a.timestamp).toLocaleString()}</td>
+                  <td>{a.score}</td>
+                  <td><LevelBadge level={a.level} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          </div>
+        </section>
+      </div>
+
+      <section className="hud-panel">
+        <p className="eyebrow">// Risk Telemetry</p>
+        <h2>Risk Score Over Time</h2>
+        <p className="panel-note">Most recent 60 events, with HIGH/MEDIUM detection thresholds marked.</p>
         <ResponsiveContainer width="100%" height={250}>
           <LineChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-            <XAxis dataKey="time" tick={false} />
-            <YAxis domain={[0, 100]} />
+            <CartesianGrid strokeDasharray="3 3" stroke="#1b2528" />
+            <XAxis dataKey="time" tick={false} stroke="#23343a" />
+            <YAxis domain={[0, 100]} stroke="#7fa8a0" tick={{ fontSize: 11, fontFamily: "JetBrains Mono" }} />
             <Tooltip
-              contentStyle={{ backgroundColor: "#1a1a2e", border: "none", color: "white" }}
+              contentStyle={{ backgroundColor: "#0f1517", border: "1px solid #23343a", color: "#e8f4ef", fontFamily: "JetBrains Mono", fontSize: 12 }}
             />
-            <ReferenceLine y={70} stroke="#e74c3c" strokeDasharray="4 4" label="HIGH threshold" />
-            <ReferenceLine y={35} stroke="#f1c40f" strokeDasharray="4 4" label="MEDIUM threshold" />
-            <Line type="monotone" dataKey="score" stroke="#4ea8de" strokeWidth={2} dot={false} />
+            <ReferenceLine y={70} stroke="#ff3b4e" strokeDasharray="4 4" label={{ value: "HIGH", fill: "#ff3b4e", fontSize: 11 }} />
+            <ReferenceLine y={35} stroke="#ffb020" strokeDasharray="4 4" label={{ value: "MEDIUM", fill: "#ffb020", fontSize: 11 }} />
+            <Line type="monotone" dataKey="score" stroke="#4ee2ff" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </section>
 
-      <section>
+      <section className="hud-panel">
+        <p className="eyebrow">// Event Log</p>
         <h2>All Events ({events.length})</h2>
-        <p>Click column headers to sort. Showing most recent 20.</p>
+        <p className="panel-note">Click column headers to sort. Showing most recent 20.</p>
+        <div className="table-scroll">
         <table>
           <thead>
             <tr>
@@ -301,11 +349,12 @@ function App() {
                 <td>{e.volume_mb}</td>
                 <td>{new Date(e.timestamp).toLocaleString()}</td>
                 <td>{e.score}</td>
-                <td>{e.level}</td>
+                <td><LevelBadge level={e.level} /></td>
               </tr>
             ))}
           </tbody>
         </table>
+        </div>
       </section>
     </div>
   );

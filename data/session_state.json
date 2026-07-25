@@ -1,6 +1,6 @@
 {
   "u_alice": {
-    "status": "LOGGED_ONLY",
+    "status": "SESSION_LOCKED",
     "triggering_event": {
       "action": "usb_copy",
       "volume_mb": 480,
@@ -8,7 +8,7 @@
       "score": 85,
       "level": "HIGH"
     },
-    "acknowledged": true
+    "acknowledged": false
   },
   "u_carol": {
     "status": "SESSION_LOCKED",
